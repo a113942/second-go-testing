@@ -1,0 +1,15 @@
+<div data-testid="counter-play">
+  <button
+    data-testid="decrement"
+    (click)="decrement()">
+    -
+  </button>
+  <span data-testid="current">{{ current$ | async }}</span>
+  <button
+    data-testid="increment"
+    (click)="increment()">
+    +
+  </button>
+</div>
+
+<router-outlet></router-outlet>
